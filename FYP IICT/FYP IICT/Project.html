@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+  <style>
+   
+    * {
+      margin: 0;
+    }
+    .Section1 img {
+      float: left;
+      margin-left: 200px;
+
+    }
+   
+    body {
+      font-family: sans-serif;
+    }
+    .Section1 {
+      background-color: #012D62;
+      height: 400px;
+    }
+    h2 {
+      float: left;
+      color: white;
+      margin-top: 20px;
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 30%;
+  
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+li a:hover {
+  background-color:white;
+  color: red;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 15px;
+}
+.dropdown a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.Section1-body {
+    color: white;
+  
+    margin-top: 5%;
+    text-align: center;
+
+}
+.Section1-body h3 {
+  font-size: 35px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  margin-left: 29%;
+  margin-top: 20px;
+  width: 35%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: rgb(2, 196, 2);
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: green;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+ .field-set {
+  text-align: center;
+  width: 50%;
+  
+  margin-left: 23%;
+  margin-top: 30px;
+  height: 250px;
+ border: 0.5px solid rgb(196, 190, 190);
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+.Section2 fieldset legend {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+}
+.Section2-left {
+  float: left;
+  width: 50%;
+}
+.Section2-left p {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: 40px;
+  color: rgb(90, 90, 90);
+}
+.Section2-left img {
+ float: left;
+ margin-left: 10px;
+ margin-top: 9px;
+
+}
+.Section2-left button {
+  padding: 15px 30px;
+  float: left;
+  margin-left: 39px;
+  margin-top: 20px;
+  border: none;
+  background-color: #B73439;
+  font-family: sans-serif;
+  border-radius: 3px;
+  width: 50%;
+}
+.Section2-left button:hover {
+  background-color: #752124;
+
+}
+.Section2-left a {
+  text-decoration: none;
+  color: white;
+}
+.field-set h3 {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #012D62;
+}
+
+
+.wrapper {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    margin-top: 20px;
+    
+}
+
+.line {
+    position: absolute;
+    left: 140%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #ccc;
+    z-index: 1;
+}
+
+.wordwrapper {
+    text-align: center;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
+    z-index: 2;
+}
+
+.word {
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px;
+    margin-left: 135%;
+
+    font: bold 20px arial,sans-serif;
+    background: #fff;
+}
+.Section2-right {
+  float: right;
+  width: 50%;
+  
+  
+}
+.Section2-right p {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: 40px;
+  color: rgb(90, 90, 90);
+
+}
+.Section2-right img {
+ float: left;
+ margin-left: 10px;
+ margin-top: 9px;
+
+}
+
+.Section2-right button {
+  padding: 15px 30px;
+  float: left;
+  margin-left: 39px;
+  margin-top: 20px;
+  border: none;
+  background-color: #518ECB;
+  font-family: sans-serif;
+  border-radius: 3px;
+  width: 50%;
+}
+.Section2-right button:hover {
+  background-color: #3a6692
+
+}
+.Section2-right a {
+  text-decoration: none;
+  color: white;
+}
+.Section3 {
+  background-color: #F2F3F3;
+  height: 400px;
+}
+.Section3 h3{
+  font-family: sans-serif;
+  margin-left: 24%;
+  padding-top: 40px;
+  font-size: 20px;
+  color: rgb(54, 53, 53);
+}
+.suzuki  {
+margin-left: 350px;
+  margin-top: 20px;
+  width:80px;
+height:80px;
+border-radius:50px;
+background-color: white;
+}
+.suzuki img {
+  margin-left: 15px;
+  margin-top: 14px;
+ 
+}
+.suzuki p {
+  margin-left: 14px;
+  margin-top: 20px;
+  color: #012D62;
+}
+
+.toyota  {
+  
+  margin-left: 100px;
+  margin-top: 20px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+  
+ 
+ 
+  
+}
+.toyota img {
+  
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 100%;
+ 
+}
+.toyota p {
+  margin-left: 12px;
+  margin-top: 20px;
+  color: #012D62;
+}
+
+.box .kia  {
+  margin-left: 100px;
+  margin-top: 20px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+}
+.kia img {
+ 
+  width: 55px;
+  height: 35px;
+  padding: 0px;
+  margin-left: 12px;
+  margin-top: 22px;  
+}
+.kia p {
+  margin-left: 25px;
+  margin-top: 30px;
+  color: #012D62;
+}
+
+.mg  {
+  margin-left: 100px;
+  margin-top: 20px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+}
+.mg img {
+  
+  border-radius: 100px;
+  margin-left: 3px;
+  margin-top: 8px;
+}
+.mg p {
+  margin-left: 25px;
+  margin-top: 20px;
+  color: #012D62;
+}
+
+.hyundai  {
+  margin-left: 100px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+}
+.hyundai img {
+  width: 55px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  margin-left: 3px;
+  margin-top: 8px;
+}
+.hyundai p {
+  margin-left: 5px;
+  margin-top: 20px;
+  color: #012D62;
+}
+
+.mercedes  {
+  margin-left: 350px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+}
+.mercedes img {
+  width: 50px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.mercedes p {
+  margin-left: 4px;
+  margin-top: 20px;
+  color: #012D62;
+}
+
+.honda {
+  margin-left: 100px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+}
+.honda img {
+  width: 55px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  margin-left: 3px;
+  margin-top: 8px;
+}
+.honda p {
+  margin-left: 13px;
+  margin-top: 20px;
+  color: #012D62;
+}
+
+.proton {
+  margin-left: 100px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+}
+.proton img {
+  width: 55px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  margin-left: 3px;
+  margin-top: 8px;
+}
+.proton p {
+  margin-left: 7px;
+  margin-top: 20px;
+  color: #012D62;
+}
+
+.Audi  {
+  margin-left: 100px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+}
+.Audi img {
+  width: 55px;
+  
+  padding: 15px;
+  border-radius: 100px;
+  margin-left: -2px;
+  margin-top: 8px;
+}
+.Audi p {
+  margin-left: 6px;
+  margin-top: 20px;
+  color: #012D62;
+}
+
+.tesla  {
+  margin-left: 100px;
+  width:80px;
+height:80px;
+border-radius:50px;
+  background-color: white;
+}
+.tesla img {
+  width: 40px;
+  
+  padding: 15px;
+  border-radius: 100px;
+  margin-left: 4px;
+  margin-top: 12px;
+}
+.tesla p {
+  margin-left: 6px;
+  margin-top: 20px;
+  color: #012D62;
+}
+.box {
+  display: inline-block;
+  
+ 
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #518ECB;
+}
+.box2 {
+  display: inline-block;
+  margin-top: 60px;
+  
+  
+ 
+}
+.Section4 {
+  height: 500px;
+}
+.Section4 h3 {
+  font-family: sans-serif;
+  margin-left: 24%;
+  padding-top: 40px;
+  font-size: 20px;
+  color: rgb(54, 53, 53);
+}
+.Section4 .Tile1 {
+  margin-left: 400px;
+  margin-top: 40px;
+  background-color: rgb(199, 199, 199);
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.Section4 .Tile1:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section4 .Tile1 img {
+ 
+  width: 70px;
+  margin-left: 15px;
+  height: 70px;
+  
+}
+.Section4 .Tile1 p {
+  margin-left: 23px;
+}
+
+.Section4 .Tile2 {
+  margin-left: 100px;
+  margin-top: 40px;
+  background-color: rgb(199, 199, 199);
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.Section4 .Tile2:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section4 .Tile2 img {
+ 
+  width: 70px;
+  margin-left: 15px;
+  height: 70px;
+  
+}
+.Section4 .Tile2 p {
+  margin-left: 32px;
+}
+
+.Section4 .Tile3 {
+  margin-left: 100px;
+  margin-top: 40px;
+  background-color: rgb(199, 199, 199);
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.Section4 .Tile3:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section4 .Tile3 img {
+ 
+  width: 70px;
+  margin-left: 15px;
+  height: 70px;
+  
+}
+.Section4 .Tile3 p {
+  margin-left: 28px;
+}
+
+.Section4 .Tile4 {
+  margin-left: 400px;
+  margin-top: 40px;
+  background-color: rgb(199, 199, 199);
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.Section4 .Tile4:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section4 .Tile4 img {
+ 
+  width: 70px;
+  margin-left: 15px;
+  height: 70px;
+  
+}
+.Section4 .Tile4 p {
+  margin-left: 25px;
+}
+
+
+.Section4 .Tile5 {
+  margin-left: 100px;
+  margin-top: 40px;
+  background-color: rgb(199, 199, 199);
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.Section4 .Tile5:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section4 .Tile5 img {
+ 
+  width: 70px;
+  margin-left: 15px;
+  height: 70px;
+  
+}
+.Section4 .Tile5 p {
+  margin-left: 25px;
+}
+
+.Section4 .Tile6 {
+  margin-left: 100px;
+  margin-top: 40px;
+  background-color: rgb(199, 199, 199);
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.Section4 .Tile6:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section4 .Tile6 img {
+ 
+  width: 70px;
+  margin-left: 15px;
+  height: 70px;
+  
+}
+.Section4 .Tile6 p {
+  margin-left: 25px;
+}
+.Section4 .Section4-box {
+  display: inline-block;
+}
+.Section4-box a{
+  color: rgb(75, 75, 75);
+}
+.Section4-box a:hover {
+  color: black;
+}
+
+.Section5 {
+  background-color: #F2F3F3;
+  height: 300px;
+}
+.Section5 h3 {
+  font-family: sans-serif;
+  margin-left: 24%;
+  padding-top: 40px;
+  font-size: 20px;
+  color: rgb(54, 53, 53);
+}
+.Section5 .Tile6 {
+  margin-left: 360px;
+  margin-top: 40px;
+  background-color: white;
+  width: 110px;
+  padding: 30px 40px;
+  
+}
+.Section5 .Tile6:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section5 .Tile6 img {
+ 
+  width: 90px;
+  margin-left: 5px;
+  height: 90px;
+  
+}
+.Section5 .Tile6 p {
+  margin-left: 10px;
+}
+
+
+
+.Section5 .Tile8 {
+  margin-left: 20px;
+  margin-top: 40px;
+  background-color: white;
+  width: 110px;
+  padding: 30px 40px;
+  
+}
+.Section5 .Tile8:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section5 .Tile8 img {
+ 
+  width: 90px;
+  margin-left: 5px;
+  height: 80px;
+  
+}
+.Section5 .Tile8 p {
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+.Section5 .Tile9 {
+  margin-left: 20px;
+  margin-top: 40px;
+  background-color: white;
+  width: 110px;
+  padding: 30px 40px;
+  
+}
+.Section5 .Tile9:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.Section5 .Tile9 img {
+ 
+  width: 90px;
+  margin-left: 5px;
+  height: 90px;
+  
+}
+.Section5 .Tile9 p {
+  margin-left: 29px;
+}
+.Section5 .Section5-box {
+  display: inline-block;
+}
+
+.Section6 {
+  background-color: #23292F;
+  height: 300px;
+}
+.Section6 h3 {
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.Section6 .Section6-1 {
+ padding-left: 390px;
+ padding-top: 50px;
+}
+.Section6 p{
+  color: gray;
+  font-size: 13px;
+  padding-top: 3px;
+}
+.Section6 a:hover {
+  text-decoration: underline;
+  color: gray;
+  
+}
+.Section6 .Section6-2 {
+ padding-left: 100px;
+ 
+}
+.Section6 .Section6-3{
+ padding-left: 100px;
+ 
+ 
+}
+.Section6-box {
+  display: inline-block;
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+  </style>
+</head>
+<body>
+  <div class="container">
+
+  <div class="Section1">
+    <a href="Project.html">
+    <img src="logo.png" width="150px" height="70px">
+  </a>
+
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+
+      <div class="dropdown">
+        <button class="dropbtn"><a href="">Cars</a> 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Toyota</a>
+          <a href="#">Suzuki</a>
+          <a href="#">Kia</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn"><a href="">Bikes</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Suzuki</a>
+          <a href="#">Kawasaki</a>
+          <a href="#">Honda</a>
+          <a href="#">Yamaha</a>
+        </div>
+      </div> 
+      <li><a href="#about">AutoStore</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#about">Gallery</a></li>
+    </ul>
+    <div class="Section1-body">
+    <h3>Find New Rides in Pakistan</h3>
+    <p>With thousands of them , we have just the right one for you</p>
+  </div>
+
+  <form class="example" action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+
+  </div>
+
+  <div class="Section2">
+
+<fieldset class="field-set"><legend>Sell Your Ride on RJS Dealers and Get the Best Price</legend>
+<div class="Section2-left">
+<h3>Post Your Ad</h3>
+
+<img src="./Car Logos/check.png" width="18px" height="18px">
+<p>Post your Ad for Free in 3 Easy Steps</p>
+<img src="./Car Logos/check.png" width="18px" height="18px">
+<p>Get Genuine offers from Verified Buyers</p>
+<img src="./Car Logos/check.png" width="18px" height="18px">
+<p>Sell your car Fast at the Best Price</p>
+<button><a href="">Post Your Ad</a></button>
+</div>
+
+<div class="Section2-right">
+  <h3>Try RJS Dealers Sell It For Me</h3>
+  <img src="./Car Logos/check.png" width="18px" height="18px">
+  <p>Dedicated Sales Expert to Sell your Car</p>
+  <img src="./Car Logos/check.png" width="18px" height="18px">
+  <p>We Bargain for you and share the Best Offer</p>
+  <img src="./Car Logos/check.png" width="18px" height="18px">
+  <p>We ensure Safe & Secure Transaction</p>
+  <button><a href="">Register Your Car</a></button>
+  </div>
+
+<div class="wrapper">
+  <div class="line"></div>
+  <div class="wordwrapper">
+      <div class="word">or</div>                                        
+  </div>
+</div>
+
+</fieldset>
+
+  </div>
+
+  <div class="Section3">
+
+<h3>New Cars By Make</h3>
+ <a href="">
+   <div class="box">
+<div class="suzuki">
+<img src="./Car Logos/Suzuki.png"  width="50px" height="50px">
+<p>Suzuki</p>
+</a>
+</div>
+</div>
+
+<div class="box">
+<div class="toyota">
+  <a href="">
+<img src="./Car Logos/toyota.png" width="60px" height="50px"> 
+<p>Toyota</p>
+</a>
+</div>
+</div>
+
+<div class="box">
+<div class="kia">
+  <a href="">
+<img src="./Car Logos/kia.png" width="25px" height="30px">
+<p>Kia</p>
+</a>
+</div>
+</div>
+
+<div class="box">
+<div class="mg">
+  <a href="">
+<img src="./Car Logos/mg.png" width="75px" height="60px">
+<p>MG</p>
+</a>
+</div>
+</div>
+
+<div class="box">
+  <div class="hyundai">
+    <a href="">
+  <img src="./Car Logos/hyundai.jpeg"  width="75px" height="60px">
+  <p>Hyundai</p>
+  </a>
+  </div>
+  </div><br>
+
+  <div class="box2">
+    <div class="mercedes">
+      <a href="">
+    <img src="./Car Logos/mercedes.jpg"  width="70px" height="60px">
+    <p>Mercedes</p>
+    </a>
+    </div>
+    </div>
+
+    <div class="box2">
+      <div class="honda">
+        <a href="">
+      <img src="./Car Logos/honda.jpg"  width="75px" height="60px">
+      <p>Honda</p>
+      </a>
+      </div>
+      </div>
+
+      <div class="box2">
+        <div class="proton">
+          <a href="">
+        <img src="./Car Logos/proton.jpg"  width="75px" height="60px">
+        <p>Proton</p>
+        </a>
+        </div>
+        </div>
+
+        <div class="box2">
+          <div class="Audi">
+            <a href="">
+          <img src="./Car Logos/Audi.png"  width="75px" height="30px">
+          <p>Audi</p>
+          </a>
+          </div>
+          </div>
+
+          <div class="box2">
+            <div class="tesla">
+              <a href="">
+            <img src="./Car Logos/tesla.png"  width="75px" height="30px">
+            <p>Tesla</p>
+            </a>
+            </div>
+            </div>
+  
+
+
+
+  </div>
+
+  
+<div class="Section4">
+
+<h3>Browse Cars By Catergory</h3>
+
+<div class="Section4-box">
+  <a href=""><div class="Tile1">
+<img src="./Car Tile Logos/familycar.png">
+<p>Family </p>
+</div>
+</a>
+</div>
+
+<div class="Section4-box">
+ <a href=""> <div class="Tile2">
+<img src="./Car Tile Logos/bigcar.png">
+<p>Suvs</p>
+</div>
+</a>
+</div>
+
+<div class="Section4-box">
+  <a href=""> <div class="Tile3">
+<img src="./Car Tile Logos/jeep.png">
+<p>Jeeps</p>
+</div>
+</a>
+</div>
+
+
+<div class="Section4-box">
+  <a href=""><div class="Tile4">
+<img src="./Car Tile Logos/smallcar.png">
+<p>Small </p>
+</div>
+</a>
+</div>
+
+<div class="Section4-box">
+  <a href=""> <div class="Tile5">
+<img src="./Car Tile Logos/luxurycar.png">
+<p>Luxury </p>
+</div>
+</a>
+</div>
+
+<div class="Section4-box">
+  <a href=""> <div class="Tile6">
+<img src="./Car Tile Logos/sportcar.png">
+<p>Sports</p>
+</div>
+</a>
+</div>
+
+
+</div>
+
+<div class="Section5">
+
+<h3>Accessories By Category</h3>
+
+<div class="Section5-box">
+  <a href=""> <div class="Tile6">
+<img src="./Accessory Images/Light.jpg">
+<p>LED Lights</p>
+</div>
+</a>
+</div>
+
+
+
+<div class="Section5-box">
+  <a href=""> <div class="Tile9">
+<img src="./Accessory Images/speaker.jpg">
+<p>Speaker</p>
+</div>
+</a>
+</div>
+
+<div class="Section5-box">
+  <a href=""> <div class="Tile9">
+<img src="./Accessory Images/Tire.jpg">
+<p>Tyres</p>
+</div>
+</a>
+</div>
+
+<div class="Section5-box">
+  <a href=""> <div class="Tile9">
+<img src="./Accessory Images/seat1.png">
+<p>Tyres</p>
+</div>
+</a>
+</div>
+
+</div>
+
+<div class="Section6">
+
+  <div class="Section6-box">
+  <div class="Section6-1">
+<h3>Cars By Make</h3>
+<a href=""><p>Kia Cars</p></a>
+<a href=""><p>Audi Cars</p></a>
+<a href=""><p>Mercedes Cars</p></a>
+<a href=""><p>Honda Cars</p></a>
+<a href=""><p>Hyundai Cars</p></a>
+<a href=""><p>MG Cars</p></a>
+</div>
+</div>
+
+<div class="Section6-box">
+<div class="Section6-3">
+  <h3>Explore RJS Dealers</h3>
+  <a href=""><p>New Cars</p></a>
+  <a href=""><p>New Bikes</p></a>
+  <a href=""><p>Gallery</p></a>
+  <a href=""><p>AutoParts and Accessories</p></a>
+  </div>
+</div>
+
+  <div class="Section6-box">
+  <div class="Section6-3">
+    <h3>RJS Dealers</h3>
+    <a href=""><p>About RJS Dealers</p></a>
+    <a href=""><p>Our Products</p></a>
+    <a href=""><p>Refunds and Returns</p></a>
+    <a href=""><p>FAQs</p></a>
+    <a href=""><p>Contact Us</p></a>
+    </div>
+  </div>
+
+  <div class="Section6-box">
+    <div class="Section6-3">
+      <h3>RJS Dealers</h3>
+      <a href=""><p>About RJS Dealers</p></a>
+      <a href=""><p>Our Products</p></a>
+      <a href=""><p>Refunds and Returns</p></a>
+      <a href=""><p>FAQs</p></a>
+      <a href=""><p>Contact Us</p></a>
+      </div>
+    </div>
+
+  
+
+</div>
+
+
+</div>
+</body>
+</html>

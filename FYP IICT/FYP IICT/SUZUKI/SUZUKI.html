@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+* {
+      margin: 0;
+    }
+   
+    body {
+      font-family: sans-serif;
+    }
+    .Section1 {
+      
+      height: 80px;
+    }
+    .Section1 img {
+        float: left;
+      margin-left: 200px;
+      
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 30%;
+  
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #012D62;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+li a:hover {
+  background-color:white;
+  color: red;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown a {
+    color: white;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 15px;
+}
+.dropdown a {
+  text-decoration: none;
+  color: #012D62;
+}
+.dropdown a:hover {
+    color: red;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.Section2 {
+    background-color: #012D62;
+    height: 200px;
+}
+.Section2 h2 {
+    color: white;
+    margin-left: 300px;
+   padding-top: 50px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  margin-left: 29%;
+  margin-top: 20px;
+  width: 35%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: rgb(2, 196, 2);
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: green;
+}
+.Section3 {
+    height: 600px;
+}
+.Section3 .box {
+    border: 1px solid rgb(192, 192, 192);
+    width: 260px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+ .Section3 .box p {
+    text-align: center;
+}
+.Section3 .box h3 {
+    color: rgb(0, 206, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Section3 .box2 {
+    border: 1px solid rgb(192, 192, 192);
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+ .Section3 .box2 p {
+    text-align: center;
+}
+.Section3 .box2 h3 {
+    color: rgb(0, 206, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.Section3 .box3 {
+    border: 1px solid rgb(192, 192, 192);
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+ .Section3 .box3 p {
+    text-align: center;
+}
+
+.Section3 .box3 h3 {
+    color: rgb(0, 206, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+.Section3 button {
+    border: none;
+   margin-left: 50px;
+   color: white;
+   font-weight: bold;
+   background-color: #B73439;
+   padding: 10px 50px;
+   border-radius: 4px;
+   margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.section3 .box a:hover {
+    box-shadow: 0 5px 15px rgba(224, 72, 72, 0.3);
+}
+.Section3 .layout{
+    display: inline-block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="Section1">
+        <img src="logo.png" width="150px" height="70px">
+    
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+    
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Cars</a> 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Toyota</a>
+              <a href="#">Suzuki</a>
+              <a href="#">Kia</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Bikes</a>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Suzuki</a>
+              <a href="#">Kawasaki</a>
+              <a href="#">Honda</a>
+              <a href="#">Yamaha</a>
+            </div>
+          </div> 
+          <li><a href="#about">AutoStore</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">Gallery</a></li>
+        </ul> 
+       
+        </div>
+        <div class="Section2">
+            <h2>Find New  Cars in Pakistan</h2>
+            <form class="example" action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+        </div>
+
+        <div class="Section3">
+    
+           <div class="layout">
+            <div class="box"> 
+                <a href="">
+                <img src="hayabusa.jpg" width="250px" height="200px">
+                <p><b>Year</b><br>2021</p>
+                <p><b>Model<br></b>Hayabusa</p>
+                <p><b>Transmission<br></b>6-speed manual</p>
+                <p><b>Engine Displacement<br></b>1300cc</p>
+                <h3>PKR 40lac</h3><br>
+                <button>Book Now</button>
+            </a>
+            </div>
+        </div>
+        <div class="layout">
+            <div class="box2"> 
+                <a href="">
+                <img src="GD-110S.png" width="250px" height="200px">
+                <p><b>YEAR<br></b>2021</p>
+                <p><b>Model<br></b>GD-110S</p>
+                <p><b>Transmission<br></b>4-speed manual</p>
+                <p><b>Engine Displacement<br></b>110cc</p>
+                <h3>PKR 1.2lac</h3><br>
+                <button>Book Now</button>
+            </a>
+            </div>
+            </div>
+
+            <div class="layout">
+                <div class="box3"> 
+                    <a href="">
+                    <img src="GS-150SE-GS150.png" width="250px" height="200px">
+                    <p><b>YEAR<br></b>2021</p>
+                    <p><b>Model<br></b>GS-150SE</p>
+                    <p><b>Transmission<br></b>4-speed manual</p>
+                    <p><b>Engine Displacement<br></b>150cc</p>
+                    <h3>PKR 3.0lac</h3><br>
+                    <button>Book Now</button>
+                </a>
+                </div>
+                </div>
+      
+
+
+        </div>
+</body>
+</html>

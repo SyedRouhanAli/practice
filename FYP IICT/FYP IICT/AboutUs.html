@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+      margin: 0;
+    }
+   
+    body {
+      font-family: sans-serif;
+    }
+    .Section1 {
+      
+      height: 80px;
+    }
+    .Section1 img {
+        float: left;
+      margin-left: 200px;
+      
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 30%;
+  
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #012D62;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+li a:hover {
+  background-color:white;
+  color: red;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown a {
+    color: white;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 15px;
+}
+.dropdown a {
+  text-decoration: none;
+  color: #012D62;
+}
+.dropdown a:hover {
+    color: red;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.Section2 {
+    background-color: #012D62;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.Section2 .Section2-body {
+    margin-left: 300px;
+    padding-top: 40px;
+    color: white;
+}
+.Section2 h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  margin-left: 29%;
+  margin-top: 20px;
+  width: 35%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: rgb(2, 196, 2);
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: green;
+}
+.Section2 {
+    background-color: #F2F3F3;
+    height: 1000px;
+}
+.Section2 h2 {
+    margin-left: 300px;
+    padding-top: 50px;
+}
+.Section2 img {
+    width: 60%;
+    height: 50%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.Section2  p {
+    width: 59%;
+    margin-left: 20%;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+.Section3 {
+    height: 700px;
+}
+.Section3 h2 {
+    margin-left: 300px;
+    padding-top: 50px;
+}
+.Section3 .box1,.box2,.box3 {
+    border: 1px solid rgb(185, 185, 185);
+    width: 203px;
+    padding-bottom: 60px;
+    
+   
+   
+}
+.Section3 .box1 {
+    margin-left: 300px;
+}
+
+.Section3 img {
+   
+    margin-right: 20px;
+    
+    height: 240px;
+}
+h
+.Section3 .box2 img{
+    margin:0;
+    
+    height: 240px;
+}
+.Section3 .rouhan img {
+    width: 200px;
+}
+.Section3 .layout {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.Section3 h4 {
+    font-size: 12px;
+    color: rgb(107, 107, 107);
+    padding-left: 5px;
+    font-weight: bold;
+}
+.Section3 h3 {
+    color: #012D62;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.Section3  p {
+    color: rgb(92, 92, 92);
+    margin-top: 10px;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="Section1">
+        <img src="logo.png" width="150px" height="70px">
+    
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+    
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Cars</a> 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Toyota</a>
+              <a href="#">Suzuki</a>
+              <a href="#">Kia</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn"><a href="">Bikes</a>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Suzuki</a>
+              <a href="#">Kawasaki</a>
+              <a href="#">Honda</a>
+              <a href="#">Yamaha</a>
+            </div>
+          </div> 
+          <li><a href="#about">AutoStore</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#about">Gallery</a></li>
+        </ul> 
+        </div>
+        
+        <div class="Section2">
+            <h2>About Us</h2>
+            <img src="./About Us/About Us.jpg">
+            <p>Founded in 2021, RJS Dealers has become Pakistan's most renowned automotive portal. Since its birth, RJS Dealers has helped millions of Pakistanis buy and sell automobiles, check automotive prices, and find solutions to their automotive needs. Today, RJS Dealers are the first name that comes to mind for anyone looking to purchase their ride.<br>
+
+                RJS Dealers has been busy serving its customers. Since its launch, we have achieved a milestone of 1 million happy customers by buying and selling over 400,000 vehicles.<br><br>
+                
+                This kind of success has made RJS Dealers a prominent name in the global e-commerce and classifieds sectors and helped raise $2 million in the first round of funding.<br><br>
+                
+                RJS Dealers is a hub where buyers and sellers interact and is a comprehensive automotive portal with a forum dedicated to all automotive discussions.<br><br>
+                
+                At RJS Dealers, we provide our visitors with the best online experience. Our mission is to revolutionize and continuously add value to the way people buy and sell vehicles online in Pakistan. We aim to provide our users with the most comprehensive automotive knowledge concerning Pakistan and the world alike and help them develop a sense of belonging in the automotive community. Our motto reflects our vision: 
+            </p>
+
+        </div>
+        <div class="Section3">
+
+            <h2>The Team</h2>
+            <div class="layout">
+                <div class="box1">
+                <img src="./About Us/junaid.JPG">
+                <h3>Junaid Ahmed</h3>
+                <h4>Founder</h4>
+                <p class="para">Junaid Ahmed is the visionary behind RJS Dealers who single handedly started the portal from his Room.</p>
+            </div>
+            </div>
+
+            <div class="layout">
+                <div class="box2">
+                <img src="./About Us/sonu.jpeg" width="203">
+                <h3>Sonu Kotak</h3>
+                <h4>CEO</h4>
+                <p class="para">Sonu Kotak is a Serial Entrepreneur. Founder & CEO of multiple software products & services companies.</p>
+                </div>
+            </div>
+
+            <div class="layout">
+                <div class="box3">
+                <img src="./About Us/rouhan.jpeg" width="203px">
+                <h3>Rouhan Ali</h3>
+                <h4>COO</h4>
+                <p class="para">Rouhan Ali eats, drinks and sleeps cars 24/7, 365 and knows all the super car owners across Pakistan.</p>
+                
+            </div>
+            </div>
+            
+
+
+        </div>
+</body>
+</html>
